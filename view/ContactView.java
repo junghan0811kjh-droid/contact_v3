@@ -47,6 +47,12 @@ public class ContactView {
     }
     private void update() {
         System.out.println("[ContactView.update()]");
+        System.out.println("수정할 ID : ");
+        Long updateId = sc.nextLong();
+        System.out.println("수정할 전화번호 : ");
+        String updatePhone = sc.next();
+        contactService.update(updateId, updatePhone);
+
     }
     private void delete() {
         System.out.println("[ContactView.delete()]");
